@@ -1,0 +1,30 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int a;
+    int b;
+    int iloczyn; // bonux h
+    int nww; //bonux h
+    cout << "Podaj pierwszą liczbe" << endl;
+    cin >> a;
+    cout << "Podaj drugą liczbe" << endl;
+    cin >> b;
+    iloczyn = a * b; // bonus h
+    while (a != b)
+        if (a < b)
+            b = b - a;
+        else
+            a = a - b; 
+    nww = iloczyn / a; // bonus h
+    cout << "Najmniejsza wspolna wielokrotnosc: ";
+    cout << nww;
+    cout << endl;
+
+    cout << "Najwiekszy wspolny dzielnik: ";
+    cout << a;
+    cout << endl;
+
+        
+}
